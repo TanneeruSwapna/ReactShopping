@@ -1,0 +1,258 @@
+/* Signup.css */
+.signup-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://img.freepik.com/free-photo/young-woman-beautiful-dress-hat_1303-17517.jpg?ga=GA1.1.577542755.1712661406&semt=ais_hybrid&w=740");
+   background-size: cover;
+  background-position: center;
+  filter: brightness(0.5) saturate(1.1) contrast(0.85);
+  z-index: 1;
+}
+
+.signup-form {
+  padding: 40px 30px;
+  background-color: #464646;
+  border-radius: 20px;
+
+  width: 100%;
+  max-width: 400px;
+  animation: fadeInUp 0.6s ease;
+  position: relative;
+  background: rgba(192, 181, 181, 0.15); /* semi-transparent white */
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  z-index: 2;
+
+}
+
+
+.signup-form h2 {
+  text-align: center;
+  color:rgb(108, 105, 105);
+  margin-bottom: 20px;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1.5px solid #e0f2f1;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.signup-form input:focus {
+  border-color: #454948;
+  outline: none;
+  box-shadow: 0 0 10px #b2dfdb;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #565d5c;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #3d4141;
+}
+
+.signup-form p {
+  text-align: center;
+  margin-top: 15px;
+  color: white;
+  font-size: 14px;
+}
+
+.signup-form p a {
+  color: #fefefe;
+  text-decoration: none;
+  font-weight: 600;
+  text-decoration: underline;
+  text-align: 300px;
+}
+
+.signup-form p a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* Wrapper to hold left content + right signup */
+.signup-page-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  background-position: center;
+}
+
+/* Left side content */
+.signup-left-info {
+  flex: 1;
+  color: white;
+  padding: 40px;
+  z-index: 2;
+  max-width: 600px;
+  background-size: cover;
+  min-height: 100vh;
+  overflow: hidden;
+  background-position: center;
+  background-color: transparent;
+  z-index: 1;
+  background-image: url("https://media.istockphoto.com/id/1209951015/photo/young-woman-wearing-raincoat.jpg?b=1&s=612x612&w=0&k=20&c=q_NV8GI0H-oJXIaJ81jMbMjZDz2yYbXZGI9wbUzeDi0=");
+  filter: brightness(0.5) saturate(1.1) contrast(0.85);
+}
+
+.signup-left-info h1 {
+  font-size: 42px;
+  text-shadow: 2px 2px white;
+  margin-bottom: 20px;
+  color: rgb(44, 54, 54);
+   animation: fadeInUp 0.6s ease;
+  font-weight: bold;
+  font-style: italic;
+  margin: 20px;
+  word-spacing: 3px;
+  letter-spacing: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.signup-left-info p {
+  font-size: 30px;
+  margin-bottom: 15px;
+
+  line-height: 1.6;
+  color: rgb(68, 69, 69);
+  font-family:'Lucida Sans' ;
+  font-style: italic;
+}
+
+
+
+
+/* Already existing styles (you already wrote these) */
+.signup-page {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5) saturate(1.1) contrast(0.85);
+  height: 100vh;
+}
+.img-container{
+  margin: 10px;
+  padding: 10px;
+  background-color: #464646;
+  border-radius: 20px;
+  animation: fadeInUp 0.6s ease;
+  position: relative;
+  background: rgba(158, 157, 157, 0.15); /* semi-transparent white */
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  z-index: 2;
+ 
+
+}
+.img-container p{
+  text-align: start;
+  margin-left: 10px;
+  color: #b2dfdb;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+   .Typing{
+
+            width: 0px;
+            overflow: hidden;
+            white-space: nowrap;
+         
+            border-right: 3px solid;
+            animation-name: typing;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-timing-function:steps(50);
+        }
+        @keyframes typing {
+            from{width: 2px;}
+            to{width: 250px;}
+            
+        }
+
+.img-container:hover{
+     transform: scale(1.05); /* Increase size on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+.shopbtn{
+  border-color: #3d4141;
+  transform: scale(1.05);
+  box-shadow: 0 2px 6px rgb(12, 12, 12);
+  padding: 8px;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: transparent;
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+
+}
+
+
+.sp1{
+  font-style: italic;
+  color: #b2dfdb;
+ font-family: cursive;
+ text-shadow: 2px 2px #a33636;
+ 
+}
+.sp2{
+  font-style: italic;
+   color: rgb(160, 6, 124);
+   font-family:cursive;
+     
+   
+} 
+.img1{
+
+  border-radius: 10px;
+  padding:5px;
+  box-shadow: 30px;
+  margin: 3px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  filter: brightness(0.8) saturate(1.1) contrast(0.85);
+
+
+
+} 
+.img1:hover {
+    transform: scale(1.05); /* Increase size on hover */
+    box-shadow: 0 8px 16px rgba(15, 14, 14, 0.2); 
+
+}
