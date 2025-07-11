@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PaymentGateway from './paymentGateway';
 import './Cart.css';
 
 const Cart = () => {
@@ -23,6 +24,7 @@ const Cart = () => {
         <p className="cart-empty">No items in the cart.</p>
       ) : (
         cart.map((item, index) => (
+          <div>
           <div key={index} className="cart-item">
             <img src={item.image} alt={item.title} />
             <div>
@@ -31,7 +33,8 @@ const Cart = () => {
             </div>
             <button className="remove-btn" onClick={() => handleRemove(index)}>X</button>
           </div>
-        ))
+          <PaymentGateway amount={item.price} />
+          </div>))
       )}
     </div>
   );
